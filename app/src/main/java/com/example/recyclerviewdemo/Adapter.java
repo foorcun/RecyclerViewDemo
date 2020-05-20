@@ -42,8 +42,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Viewholder> {
 
         viewholder.setData(resource, title);
 
-        //
-        // 3 viewholder.itemLayout.setOn
+
+        // 3
         viewholder.itemLayout.setOnClickListener(new View.OnClickListener() {
 
 
