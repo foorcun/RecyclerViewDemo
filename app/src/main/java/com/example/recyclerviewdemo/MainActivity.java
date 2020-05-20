@@ -47,7 +47,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void ekle(View v) {
+        //buraya istediğin kodları gir
+        //Toast.makeText(this, "tıklandım", Toast.LENGTH_SHORT).show();
 
+        int position = 0;
+
+        insertitem(position);
+
+
+    }
+
+    private void insertitem(int position) {
+        modelClassList.add(position,new  ModelClass(R.drawable.ic_launcher_background, "ben yeni geldim"));
+        // en sona ekler
+        // adapter.notifyItemInserted(modelClassList.size());
+        //ilk başa ekler
+        adapter.notifyItemInserted(position);
+
+    }
 
     public void cikar(View v) {
         //buraya istediğin kodları gir
