@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         modelClassList.add(new ModelClass(R.drawable.ic_launcher_background, "ben titleım 5"));
         modelClassList.add(new ModelClass(R.drawable.ic_launcher_background, "ben titleım 6"));
 
-        Adapter adapter = new Adapter(modelClassList);
+        Adapter adapter = new Adapter(this,modelClassList);
         recyclerView.setAdapter(adapter);
 
         adapter.notifyDataSetChanged();

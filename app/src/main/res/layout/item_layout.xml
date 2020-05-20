@@ -6,7 +6,8 @@
     android:layout_height="wrap_content"
     android:background="#CDDC39"
     android:layout_margin="10dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/itemLayout">
 
     <ImageView
         android:id="@+id/imageView"
